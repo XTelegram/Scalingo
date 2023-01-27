@@ -1,5 +1,7 @@
-git clone $REPO XYZ
-cd XYZ
-pip3 install --upgrade pip
+git clone https://github.com/XTelegram/upsnack
+cd upsnack
+pip3 install --upgrade pip 
 pip3 install -U -r requirements.txt
-$START_CMD
+pip3 install -U -r requirements-cli.txt
+python3 update.py && python3 -m bot
+
